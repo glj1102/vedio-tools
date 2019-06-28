@@ -45,11 +45,5 @@
         "npm": "^6.9.2"
     },
     "types": "index.d.ts",
-    "typings": "index.d.ts",
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-            "pre-commit": "pretty-quick --staged"
-        }
-    }
+    "typings": "index.d.ts"
 }
