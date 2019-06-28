@@ -1,0 +1,55 @@
+{
+    "name": "ffmpeg-tools",
+    "version": "1.0.0",
+    "description": "ffmpeg-tools",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node src/app.ts",
+        "clean": "rm -rf ./build",
+        "build": "rm -rf build && tsc && cp ./package.json build/package.json && cp ./README.md build/README.md && cp ./LICENSE build/LICENSE ",
+        "rebuild": "npm run-script clean && npm run-script build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/glj1102/vedio-tools.git"
+    },
+    "keywords": [],
+    "author": "gonglinjie",
+    "license": "SEE LICENSE IN ./LICENSE",
+    "bugs": {
+        "url": "https://github.com/glj1102/vedio-tools/issues"
+    },
+    "homepage": "https://github.com/glj1102/vedio-tools#readme",
+    "devDependencies": {
+        "@types/fluent-ffmpeg": "^2.1.10",
+        "@types/koa": "^2.0.48",
+        "@types/koa-bodyparser": "^4.3.0",
+        "@types/koa-router": "^7.0.42",
+        "@types/koa-views": "^2.0.3",
+        "@types/node": "^10.14.9",
+        "typescript": "^3.5.2"
+    },
+    "dependencies": {
+        "@ffmpeg-installer/ffmpeg": "^1.0.18",
+        "@koa/cors": "^2.2.3",
+        "busboy": "^0.3.1",
+        "ffmpeg": "0.0.4",
+        "fluent-ffmpeg": "^2.1.2",
+        "i": "^0.3.6",
+        "koa": "^2.7.0",
+        "koa-body": "^4.1.0",
+        "koa-bodyparser": "^4.2.1",
+        "koa-multer": "^1.0.2",
+        "koa-router": "^7.4.0",
+        "koa-views": "^6.2.0",
+        "npm": "^6.9.2"
+    },
+    "types": "index.d.ts",
+    "typings": "index.d.ts",
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "pre-commit": "pretty-quick --staged"
+        }
+    }
+}
