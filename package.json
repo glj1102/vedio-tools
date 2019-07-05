@@ -41,8 +41,7 @@
         "koa-bodyparser": "^4.2.1",
         "koa-multer": "^1.0.2",
         "koa-router": "^7.4.0",
-        "koa-views": "^6.2.0",
-        "npm": "^6.9.2"
+        "koa-views": "^6.2.0"
     },
     "types": "index.d.ts",
     "typings": "index.d.ts"
