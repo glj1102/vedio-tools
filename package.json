@@ -27,6 +27,7 @@
         "@types/koa-router": "^7.0.42",
         "@types/koa-views": "^2.0.3",
         "@types/node": "^10.14.12",
+        "husky": "^3.0.0",
         "typescript": "^3.5.2"
     },
     "dependencies": {
